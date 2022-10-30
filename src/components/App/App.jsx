@@ -1,16 +1,17 @@
+import Choice from 'components/Choice/Choice'
+
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 20,
         color: '#010101'
       }}
     >
-      React homework template
+      <Choice />
     </div>
   );
 };
