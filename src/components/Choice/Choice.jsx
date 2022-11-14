@@ -4,6 +4,7 @@ import {FeedbackOptions} from 'components/FeedbackOptions/FeedbackOptions'
 import {Section} from 'components/Section/Section'
 import {Notification} from 'components/Notification/Notification'
 
+
 class Choice extends Component {
     state = {
         good: 0,
@@ -12,7 +13,6 @@ class Choice extends Component {
       }
       
     noСhoiceMade = false;
-
 
     buttonChoice = (choice) => {
         this.noСhoiceMade = true
@@ -36,19 +36,6 @@ class Choice extends Component {
       return 0
     }
 
-    choiceWas = (message) => {
-        this.noСhoiceMade 
-        ?
-        message = <Statistics 
-        good={this.state.good} 
-        neutral={this.state.neutral} 
-        bad={this.state.bad} 
-        total={this.countTotalFeedback}
-        positivePercentage={this.countPositiveFeedbackPercentage}/>
-        :
-        message = <Notification 
-        message={"There is no feedback"}/>
-    }
 
     render() {
         let message
@@ -83,3 +70,22 @@ class Choice extends Component {
 }
 
 export default Choice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
